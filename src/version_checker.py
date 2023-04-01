@@ -9,7 +9,6 @@ import sys  # for executable file compatibility
 import webbrowser  # to open repository link
 
 import requests  # to make HTTP requests to GitHub API
-import json  # to parse the response from GitHub API as JSON object
 
 from gui import root  # to create version popup
 from file_handler import show_error  # to create error popup
