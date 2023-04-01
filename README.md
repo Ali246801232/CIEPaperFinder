@@ -6,7 +6,7 @@ CIEPaperFinder is a Python-based graphical user interface (GUI) program that ena
 
 ### Downloading and Running
 
-To use the program, all you need to do is download the `CIEPaperFinder` directory from the latest release at [Releases](https://github.com/Ali246801232/CIEPaperFinder/releases). All required files and dependencies are included inside of this, so no additional installation is necessary. After downloading, simply execute the `CIEPaperFinder.exe` file inside of the mentioned directory.
+To use the program, all you need to do is download the `CIEPaperFinder.zip` file from the latest release at [Releases](https://github.com/Ali246801232/CIEPaperFinder/releases). All required files and dependencies are included inside of this, so no additional installation is necessary. After downloading, simply extract the directory execute the `CIEPaperFinder.exe` file inside.
 
 ### How to Use
 
