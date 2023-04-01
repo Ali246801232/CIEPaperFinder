@@ -70,7 +70,7 @@ def create_link(f_qual, f_code, f_session, f_year, f_type, f_num):
 
     # Check given paper number
     if len(str(f_num)) != 2 or not str(f_num).isnumeric:
-        return 1, "Invalid paper number and/or variant.\nIf it has one digit, like '1', try variations like '01'."
+        return 1, "Invalid paper number and/or variant. If it has one digit, like '1', try variations like '01'."
 
     # Create file name and url using given information
     file_name = f"{f_code}_{url_session}{f_year[2: 4]}_{url_type}_{f_num}{url_extension}"
@@ -102,7 +102,7 @@ def open_link(file_url):
         else:
             return 1, "Download cancelled."
     else:
-        return 1, "The file does not exist or could not be found.\nTry checking the details you entered."
+        return 1, "The file does not exist or could not be found. Try checking the details you entered."
 
 
 # Function to check and open link to file - Special Case
@@ -130,7 +130,7 @@ def open_link_special(file_url):
         else:
             return 1, "Download cancelled."
     else:
-        return 1, "The file does not exist or could not be found.\nTry checking the details you entered."
+        return 1, "The file does not exist or could not be found. Try checking the details you entered."
 
 
 # Function to allow user to browse for download path
@@ -182,7 +182,8 @@ def show_error(message):
         text=message,
         background="#262626",
         foreground="white",
-        font=("Helvetica", 10)
+        font=("Helvetica", 10),
+        wraplength=256
     ).pack()
 
     ok_button = ttk.Button(error, text="OK", command=lambda: close_window(error))

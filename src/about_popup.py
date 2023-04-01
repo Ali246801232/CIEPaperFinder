@@ -8,6 +8,8 @@ import sys  # for executable file compatibility
 
 import webbrowser  # to open repository link
 
+from gui import root  # to create popup
+
 
 # Function to open link to GitHub
 def open_repo():
@@ -15,8 +17,8 @@ def open_repo():
 
 
 # Function to show information about program
-def show_about(root):
-    # Create 'About' popup
+def show_about(current_version):
+    # Create about popup
     about = tk.Toplevel(root)
     about.title("About CIEPaperFinder")
     about.config(bg="#262626")
@@ -25,7 +27,7 @@ def show_about(root):
     about.grab_set()
     about.focus_set()
 
-    # Create file path for popup icon
+    # Create file path for winidow icon
     if getattr(sys, 'frozen', False):
         icon_path = os.path.join(os.path.dirname(sys.executable), "paperfindericon.ico")
     else:
@@ -34,10 +36,10 @@ def show_about(root):
     # Set window icon
     about.iconbitmap(icon_path)
 
-    # Display 'About' text
+    # Display about text
     tk.Label(
         about,
-        text="CIEPaperFinder v1.0.0\n\nCIEPaperFinder is a Python-based graphical user interface (GUI) program that enables users to access and download Cambridge International Examinations (CIE) past papers and resources from a range of 101 IGCSE subjects, 51 O Level subjects, and 81 AS & A Level subjects.\n\nTo download a paper, simply input the required details and press the 'Download File' button and select a download location.\n\nFor more information about the program, please visit the GitHub repository by clicking the button below.",
+        text=f"CIEPaperFinder {current_version}\n\nCIEPaperFinder is a Python-based graphical user interface (GUI) program that enables users to access and download Cambridge International Examinations (CIE) past papers and resources from a range of 101 IGCSE subjects, 51 O Level subjects, and 81 AS & A Level subjects.\n\nTo download a paper, simply input the required details and press the 'Download File' button and select a download location.\n\nFor more information about the program, please visit the GitHub repository by clicking the button below.",
         background="#262626",
         foreground="white",
         font=("Helvetica", 10),

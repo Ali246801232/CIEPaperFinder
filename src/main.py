@@ -1,12 +1,15 @@
 # CIEPaperFinder
 # Author: Ali Irfan
-# Date: Wednesday, 16/02/2023
+# Date: Saturday, 01/04/2023
 # This program allows you to access and download CIE past papers from https://papers.gceguide.com.
 # Simply enter the required details to quickly find and download your desired paper."
 
+# Current version of the program
+VERSION = "v0.1.0"
+
 from tkinter import ttk  # to create button start GUI mainloop
 
-from gui import root, paper_qual, paper_code, paper_session, paper_year, paper_type, paper_num  # for getting gui and inputs
+from gui import root, paper_qual, paper_code, paper_session, paper_year, paper_type, paper_num  # to get gui and inputs
 
 from file_handler import create_link, open_link, show_error  # for download button
 from about_popup import show_about  # for about button
@@ -31,8 +34,16 @@ download_button = ttk.Button(root, text="Download File", command=lambda: button_
 download_button.pack(pady=10)
 
 # Create about button
-about_button = ttk.Button(root, text="About CIEPaperFinder", command=lambda: show_about(root))
+about_button = ttk.Button(root, text="About CIEPaperFinder", command=lambda: show_about(VERSION))
 about_button.pack()
+
+# Version checking is below the rest of the code to make sure buttons are created first.
+from version_checker import compare_version  # for version checking
+
+# Call function from version_checker.py to compare versions
+version_compared = compare_version(VERSION)
+if version_compared[0] == 1:
+    show_error(version_compared[1])
 
 # Start GUI event loop
 root.mainloop()
