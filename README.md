@@ -57,4 +57,4 @@ This project is licensed under the terms of the MIT License. A copy of the licen
 ## Changelog
 
 ### Version 0.1.0 (2023-04-01)
-- Initial release of the program
+- Initial pre-release of the program
