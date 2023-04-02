@@ -1,15 +1,11 @@
-# Functions for opening URLs, downloading files from URLs, and displaying errors.
+# Functions for creating file URLS and downloading files from URLs.
 # Functions return 0 for success, 1 for error w/ error message.
 
 import requests  # to check for 404 pages
 
-import tkinter as tk  # to create error popup
-from tkinter import ttk  # to create "OK" button
-
+import tkinter as tk  # for download file dialog
 from tkinter import filedialog  # for download file dialog
-
-import os  # for icon path manipulation
-import sys  # for executable file compatibility
+import os  # for download path manipulation
 
 import dictionaries  # for dictionaries of subjects and resource types
 
@@ -153,44 +149,3 @@ def download_file(file_url, file_path):
     response = requests.get(file_url)
     with open(file_path, 'wb') as file:
         file.write(response.content)
-
-
-# Function to display error
-def show_error(message):
-    # Create error popup
-    error = tk.Toplevel()
-    error.title("Error")
-    error.config(bg="#262626")
-
-    # Make sure new window is focused.
-    error.grab_set()
-    error.focus_set()
-
-    # Create file path for popup icon
-    if getattr(sys, 'frozen', False):
-        icon_path = os.path.join(os.path.dirname(sys.executable), "paperfindericon.ico")
-    else:
-        icon_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "paperfindericon.ico")
-
-    # Set window icon
-    error.iconbitmap(icon_path)
-
-    # Display error message
-    tk.Label(
-        error,
-        text=message,
-        background="#262626",
-        foreground="white",
-        font=("Helvetica", 10),
-        wraplength=256
-    ).pack()
-
-    ok_button = ttk.Button(error, text="OK", command=lambda: close_window(error))
-    ok_button.pack()
-
-    error.mainloop()
-
-
-# Function to close window
-def close_window(window):
-    window.destroy()

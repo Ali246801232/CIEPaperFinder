@@ -12,7 +12,7 @@ from tkinter import ttk  # to create button start GUI mainloop
 from gui import root, paper_qual, paper_code, paper_session, paper_year, paper_type, paper_num  # to get gui and inputs
 
 from file_handler import create_link, open_link, show_error  # for download button
-from about_popup import show_about  # for about button
+from popups import show_about  # for about button
 
 
 # Function to call relevant functions from file_handler.py
