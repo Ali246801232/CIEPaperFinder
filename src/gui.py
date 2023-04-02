@@ -6,7 +6,7 @@ import sys  # for executable file compatibility
 import tkinter as tk  # to create GUI
 from tkinter import ttk  # to use enhanced widgets
 
-import subjects  # dictionary of subjects
+import dictionaries  # for subject count
 
 # Create root widget
 root = tk.Tk()
@@ -31,9 +31,9 @@ style.configure("TLabel", background="#262626", foreground="white")
 
 # Display title and number of supported subjects
 ttk.Label(root, text="Welcome to CIEPaperFinder!", style="TLabel", font=("Helvetica", 20)).pack()
-ttk.Label(root, text=str(len(subjects.IGCSE)) + " IGCSE subjects", style="TLabel", font=("Helvetica", 14)).pack()
-ttk.Label(root, text=str(len(subjects.OLevel)) + " O Level subjects", style="TLabel", font=("Helvetica", 14)).pack()
-ttk.Label(root, text=str(len(subjects.ALevel)) + " AS & A Level subjects", style="TLabel", font=("Helvetica", 14)).pack()
+ttk.Label(root, text=str(len(dictionaries.IGCSE)) + " IGCSE subjects", style="TLabel", font=("Helvetica", 14)).pack()
+ttk.Label(root, text=str(len(dictionaries.OLevel)) + " O Level subjects", style="TLabel", font=("Helvetica", 14)).pack()
+ttk.Label(root, text=str(len(dictionaries.ALevel)) + " AS & A Level subjects", style="TLabel", font=("Helvetica", 14)).pack()
 
 # Create qualification input box
 ttk.Label(root, text="Qualification:", style="TLabel").pack()

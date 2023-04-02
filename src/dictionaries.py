@@ -1,4 +1,6 @@
-# Dictionaries for supported IGCSE, O Level and AS & A Level subject URLs.
+# Dictionaries for:
+# > supported IGCSE, O Level and AS & A Level subject URLs.
+# > supported resource types and files extensions.
 
 IGCSE = {
     "0452": "Accounting%20(0452)/",
@@ -240,4 +242,23 @@ ALevel = {
     "9676": "Urdu%20(A%20Level%20only)%20(9676)/",
     "8686": "Urdu%20-%20Language%20(AS%20Level%20only)%20(8686)/",
     "9686": "Urdu%20-%20Pakistan%20only%20(A%20Level%20only)%20(9686)/"
+}
+
+
+ResourceTypes = {
+    "Question Paper": ("qp", ".pdf"),
+    "Marking Scheme": ("ms", ".pdf"),
+    "Insert": ("in", ".pdf"),
+    "Transcript (Languages)": ("qr", ".pdf"),
+    "Sound File (Languages)": ("sf", ".mp3"),
+    "Candidate Cards (Languages)": ("rp", ".pdf"),
+    "Confidential Instructions (Sciences)": ("ci", ".pdf"),
+    "Source Files (Computer Science / IT)": ("sf", ".zip"),
+    "Survey Map (Geography)": ("i2", ".pdf")
+}
+
+ExtensionMap = {
+    ".pdf": "Adobe Acrobat Document",
+    ".mp3": "MP3 Format Sound",
+    ".zip": "WinRAR ZIP archive"
 }

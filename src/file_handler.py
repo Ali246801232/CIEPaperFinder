@@ -1,5 +1,5 @@
 # Functions for opening URLs, downloading files from URLs, and displaying errors.
-# Functions return 0 for success, 1 for error w/ message.
+# Functions return 0 for success, 1 for error w/ error message.
 
 import requests  # to check for 404 pages
 
@@ -11,8 +11,7 @@ from tkinter import filedialog  # for download file dialog
 import os  # for icon path manipulation
 import sys  # for executable file compatibility
 
-import subjects  # for dictionary of subjects
-import resource_types  # for dictionary of resource types
+import dictionaries  # for dictionaries of subjects and resource types
 
 
 # Function to check details and create url
@@ -24,19 +23,19 @@ def create_link(f_qual, f_code, f_session, f_year, f_type, f_num):
     if f_qual == "IGCSE":
         url_qual = "Cambridge%20IGCSE/"
         try:
-            url_sub = subjects.IGCSE[f_code]
+            url_sub = dictionaries.IGCSE[f_code]
         except KeyError:
             return 1, "Invalid or unsupported subject code"
     elif f_qual == "O Level":
         url_qual = "O%20Levels/"
         try:
-            url_sub = subjects.OLevel[f_code]
+            url_sub = dictionaries.OLevel[f_code]
         except KeyError:
             return 1, "Invalid or unsupported subject code"
     elif f_qual == "AS & A Level":
         url_qual = "A%20Levels/"
         try:
-            url_sub = subjects.ALevel[f_code]
+            url_sub = dictionaries.ALevel[f_code]
         except KeyError:
             return 1, "Invalid or unsupported subject code"
     else:
@@ -59,8 +58,8 @@ def create_link(f_qual, f_code, f_session, f_year, f_type, f_num):
     # Check given resource type
     try:
         if f_type != "Pre-Release Material (Computer Science)":
-            url_type = resource_types.ResourceTypes[f_type][0]
-            url_extension = resource_types.ResourceTypes[f_type][1]
+            url_type = dictionaries.ResourceTypes[f_type][0]
+            url_extension = dictionaries.ResourceTypes[f_type][1]
         else:
             # Handle special case
             url_type = "pm"
@@ -142,7 +141,7 @@ def browse_path(file_name, file_extension):
     # Browse file path from save dialog
     downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads")
     file_path = filedialog.asksaveasfilename(initialdir=downloads_folder, initialfile=file_name, defaultextension=file_extension, filetypes=[(
-                                                                                                                                             resource_types.ExtensionMap[file_extension], f"*{file_extension}"), ("All files", "*.*")])
+                                                                                                                                             dictionaries.ExtensionMap[file_extension], f"*{file_extension}"), ("All files", "*.*")])
     file_dialog.destroy()
 
     # Return file path
