@@ -8,7 +8,7 @@ Originally started this because I was bored and I thought the idea was cool. The
 
 ### Downloading and Running
 
-To use the program, all you need to do is download the `CIEPaperFinder.zip` file from the latest release at [Releases](https://github.com/Ali246801232/CIEPaperFinder/releases). All required files and dependencies are included inside of this, so no additional installation is necessary. After downloading, simply extract the directory execute the `CIEPaperFinder.exe` file inside.
+To use the program, all you need to do is download the `CIEPaperFinder.zip` file from the latest release at [Releases](https://github.com/Ali246801232/CIEPaperFinder/releases). All required files and dependencies are included inside of this, so no additional installation is necessary. After downloading, simply extract the directory and execute the `CIEPaperFinder.exe` file inside.
 
 ### How to Use
 
@@ -16,7 +16,7 @@ Upon running the program, you will be greeted with this window:
 
 [<img src="https://i.postimg.cc/WzFR1Npv/README-Blank-Window.png" width="271">](https://postimg.cc/ZvSsfhy7)
 
-To download your desired resource, you will need to enter the required information for the resource and then press the "Download File" button. Keep in mind that this program assumes that you have basic knowledge as to how CIE examinations work. Namely how exam sessions work, what subject codes are, how papers are numbered, and what the different types of resources are. In case you're unaware, subject codes are 4-digit numbers that identify a given CIE subject; for example, Chemistry has the code "5054". Additionally, you must input paper number and variant as a 2-digit number, the first digit being the paper number and the second digit being the variant; for example, paper 2, variant 3 would be "23". The rest of the options are drop-downs so you won't have to worry about formats for those.
+To download your desired resource, you will need to enter the required information for the resource and then press the "Download File" button. Keep in mind that this program assumes that you have basic knowledge as to how CIE examinations work. Namely how exam sessions work, what subject codes are, how papers are numbered, and what the different types of resources are. In case you're unaware, subject codes are 4-digit numbers that identify a given CIE subject; for example, Chemistry has the code "5054". Additionally, you must input the paper number and variant as a 2-digit number, the first digit being the paper number and the second digit being the variant; for example, paper 2, variant 3 would be "23". The rest of the options are drop-downs so you won't have to worry about formats for those.
 
 ### Example Usage
 
