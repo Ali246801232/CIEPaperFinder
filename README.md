@@ -1,6 +1,6 @@
 # CIEPaperFinder [<img align="right" width="160" src="https://i.postimg.cc/DZzkRQtm/README-Icon.png">](https://postimg.cc/FfwBLSFQ)
 
-CIEPaperFinder is a Python-based graphical user interface (GUI) program that enables users to access and download Cambridge International Examinations (CIE) past papers and resources from a range of 101 IGCSE subjects, 51 O Level subjects, and 81 AS & A Level subjects. Inspired by [https://github.com/mrc2rules/CAIE_PastPapersOpener](CAIE PastPapersOpener) made by [mrc2rules](https://github.com/mrc2rules).
+CIEPaperFinder is a Python-based graphical user interface (GUI) program that enables users to access and download Cambridge International Examinations (CIE) past papers and resources from a range of 101 IGCSE subjects, 51 O Level subjects, and 81 AS & A Level subjects. Inspired by [CAIE PastPapersOpener](https://github.com/mrc2rules/CAIE_PastPapersOpener) made by [mrc2rules](https://github.com/mrc2rules).
 
 Originally started this because I was bored and I thought the idea was cool. Then decided I might as well put some effort into it. Then I realized this might be plagiarism. Then I realized that's not how plagiarism works. Then I realized it's still kind of a dick move to not bother asking Rahbab. Then I decided, screw it, I'll just release it anyways.
 
