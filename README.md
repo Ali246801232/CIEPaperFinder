@@ -1,4 +1,4 @@
-# CIEPaperFinder [<img style="float: right;" src="https://i.postimg.cc/DZzkRQtm/README-Icon.png" width="160">](https://postimg.cc/FfwBLSFQ)
+# CIEPaperFinder [<img align="right" width="160" src="https://i.postimg.cc/DZzkRQtm/README-Icon.png">](https://postimg.cc/FfwBLSFQ)
 
 CIEPaperFinder is a Python-based graphical user interface (GUI) program that enables users to access and download Cambridge International Examinations (CIE) past papers and resources from a range of 101 IGCSE subjects, 51 O Level subjects, and 81 AS & A Level subjects.
 
@@ -32,7 +32,7 @@ Your paper should be saved in the location you specified in the file dialog and 
 
 ## Reporting Bugs or Issues
 
-If you encounter any problems while using CIEPaperFinder, please follow these guidelines to report bugs or issues:
+If you encounter any problems while using CIEPaperFinder, well gl because I keep forgetting I made this thing, but here's some guidelines anyways:
 
 1. Check the [Changelog](https://github.com/Ali246801232/CIEPaperFinder/blob/main/README.md#changelog) section to see if the issue has already been fixed in a newer version of the program.
 2. Search the existing [Issues](https://github.com/Ali246801232/CIEPaperFinder/issues) to see if the problem has already been reported by someone else.
@@ -46,7 +46,7 @@ If you encounter any problems while using CIEPaperFinder, please follow these gu
 
 Before reporting an issue, please make sure that it is not related to the following known issues:
 
-- Specimen papers are not supported as their file format is too different from those of past papers. This is solvable and will probably be a feature in future version but, for now, you cannot download resources related to specimen papers.
+- Specimen papers are not supported as their file format is too different from those of past papers. This is solvable and will probably be a feature in future version (if that ever happens) but, for now, you cannot download resources related to specimen papers.
 - Some subjects or resources are not supported. The website used to find and download files does not have papers uploaded for every subject and examination. As this is an issue with the website, if a subject or resource is missing, you will unfortunately have to spend time looking for a different source online yourself.
 - Some files exist on the website but can't be found. The website used has a defined naming convention for its files which is used to find them. However, some files don't follow this and, as a result, cannot be found. As this is an issue with the website, if you come across such a file, you will unfortunately have to spend time looking for it online yourself.
 
